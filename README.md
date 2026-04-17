@@ -1,25 +1,23 @@
 ## 𐙚 ‧₊˚ ⋅ Pagina Web sobre La Cienega de Mallorquín
 
 ૮ ˶ᵔ ᵕ ᵔ˶ ა  
-Esta es una pagina web, que utiliza algunos metodos de **flexbox**, **CSS Grid**, *margin*, *padding* y en general todo lo referenta a modelo de caja de css. Se intenta llevar una buena semantica en el html con el objetivo de emular una buena interfaz de usuario, agradable y landeable.
+#### Esta es una pagina web, que utiliza algunos metodos de **flexbox**, **CSS Grid**, *margin*, *padding* y en general todo lo referenta a modelo de caja de css. Se intenta llevar una buena semantica en el html con el objetivo de emular una buena interfaz de usuario, agradable y landeable.
 ---
 
 ## 𐙚 ‧₊˚ ⋅ Project Overview
 
-This project implements a **console menu system** that allows the user to:
+Este proyecto tiene las funciones o vistas principales
 
-- Select a **faculty (course)**
-- Register **multiple students**
-- Store the information **temporarily in memory**
-- Save the records **permanently in a CSV file**
-
-The system continues asking for new student data until the user decides to stop.
+- Permite llegar a links por medio de un **navbar**
+- Se puede ver un **mapa de google maps en tiempo real**
+- Tiene las normas básicas de cuidado **en espacios ecologicos**
+- Su interfaz es atractiva porqué **tiene animaciones**
 
 ---
 
 ## 𐙚 ‧₊˚ ⋅ Program Structure
 
-### 📚 Courses
+### 📚 
 
 The program includes a list with the following faculties:
 
