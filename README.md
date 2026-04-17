@@ -35,98 +35,46 @@ El programa necesita estas etiquetas para el seo (search engine optimization), e
 Es para que el navegador asocie las keywords con cada resultado de busqueda sobre esas palabras, es decir, sí se busca alguna de estas palabras puede aparecer facilmente.
 ---
 
-### 📚 Students List
+### 📚¿Porque se manejan tantos divs y sections?
 
-An **empty list** called `estudiantes` is used to store student information during the program execution.
-
-All registered students are temporarily stored in this list.
-
----
-
-### 📄 CSV File Storage
-
-At the end of the program, the student information is stored in a **CSV file named `clientes.csv`**, allowing the data to be saved permanently.
-
----
-
-## 𐙚 ‧₊˚ ⋅ Functions
-
-### `mostrar()`
-
-This function prints the students stored in the `estudiantes` list.
-
-It helps visualize all registered students during the session.
-
----
-
-## 𐙚 ‧₊˚ ⋅ Program Flow
-
-1. The program asks the user to **choose a faculty** (from 1 to 4).
-2. The selected faculty is displayed.
-3. The program enters a **loop**.
-4. Inside the loop, the system:
-   - Requests student information
-   - Stores the data in the `estudiantes` list
-5. The loop continues until the user types **`n`** to stop.
-6. Finally, the data is **saved into the CSV file**.
-
----
-
-## 𐙚 ‧₊˚ ⋅ Notes
-
-Even though the requirements may vary in complexity, the program successfully registers multiple students and stores their information efficiently.
-
----
-
-૮ ˶ᵔ ᵕ ᵔ˶ ა  
-*A small console project, but a solid step toward learning data management and file handling in Python.*
-
-```python
-cursos = [
-    "Facultad de ingeniería",
-    "Facultad de idiomas",
-    "Facultad de ciencias juridicas",
-    "Facultad de ciencias de la salud"
-]
-
-estudiantes = []
-
-def interactuar(estudiante):
-    if len(estudiante.split(" - ")) == 3:
-        print("Admit.ido")
-        estudiantes.append(estudiante)
-        letra = input("Filtrar por inicial: ")
-        if estudiante.startswith(letra):
-            print(estudiante)
-    else:
-        print("Cantidad de valores incorrecta, inténtelo nuevamente")
-
-def mostrar():
-    for i in estudiantes:
-        print(i)
-
-while True:
-    try:
-        opcion = int(input("Seleccione un curso (1-4): "))
-        if opcion <= 0 or opcion > 4:
-            raise IndexError
-        break
-    except:
-        print("Opción inválida")
-
-if 1 <= opcion <= 4:
-    print(cursos[opcion-1])
-
-while True:
-    interactuar(input("Ingrese nombre - curso - carrera del estudiante: "))
-    boton = input("¿Seguir registrando? (s/n): ").lower()
-    if boton == 'n':
-        mostrar()
-        break
-f = open("clientes.csv", "w")
-
-for e in estudiantes:
-    f.write(e + "\n")
-
-f.close()
+#### En este proyecto se decidió manejar sections y div, para que el css sea manejable y poder hacer cuadros de textos atractivos a la vista. ¿Como se logro esto?, sencillo, se llamaba una clase al div, luego se colocanban los respectivos objetos, por ultimo se editaban en el css y se les colocaban las caracteristicas como el blureado, o las animaciones directamente a la clase.
+### Ejemplo:
+```html
+<nav class="navbar">  /*Aca se guarda en una clase*/
+        <span>Eco parque <br> Mallorquín</span> /*este es un objeto*/
+        <a href="https://ecoturismocienagademallorquin.com/" target="_blank">Información oficial</a>  /*este es otro objeto*/
+        <a href="https://ecoturismocienagademallorquin.com/fiesta-de-la-virgen-del-carmen-de-los-pescadores/" target="_blank"> Conoce sus costumbres</a>
+        <a href="https://agendacolombia.com/barranquilla/guia-del-ecoparque-mallorquin-en-barranquilla/" target="_blank">Eventos</a>
+        <a href="https://www.elespectador.com/ambiente/blog-el-rio/la-disputa-por-las-obras-alrededor-de-la-cienaga-mas-importante-de-barranquilla/" target="_blank">Noticias</a>
+    </nav>
 ```
+- luego se revisa el css y mira que se opera para que el resultado sea agradable a la vista
+
+```css
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9rem;
+    background-color: #1A5126;
+    color:aliceblue;
+}
+
+.navbar span {
+    
+    font-size: 3rem;
+}
+
+.navbar a {
+    color: #8fbf5f;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #218618;
+}
+
+```
+
+---
+
