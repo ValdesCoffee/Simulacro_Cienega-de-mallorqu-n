@@ -17,20 +17,25 @@ Este proyecto tiene las funciones o vistas principales
 
 ## 𐙚 ‧₊˚ ⋅ Program Structure
 
-### 📚 
+### 📚 Meta etiquets
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="Cienega de mallorquin" content="Una pagina no oficial de la cienega de mallorquin">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="keywords" content="Ciénega, ecología, ecoparque, senderismo, turismo sostenible">
+    <title>Ciénega de mallorquín_ página no oficial ❁</title>
+</head>
+```
+El programa necesita estas etiquetas para el seo (search engine optimization), estas etiquetas funcionan para que el navegador web asocie las etiquetas, las keywords y el titule con el contenido de nuestro sitio web. La razón por la cual se utiliza las siguientes keywords:
 
-The program includes a list with the following faculties:
-
-- Engineering  
-- Languages  
-- Legal Sciences  
-- Health Sciences  
-
-The user selects one of these options at the beginning of the program.
-
+```html
+<meta name="keywords" content="Ciénega, ecología, ecoparque, senderismo, turismo sostenible">
+```
+Es para que el navegador asocie las keywords con cada resultado de busqueda sobre esas palabras, es decir, sí se busca alguna de estas palabras puede aparecer facilmente.
 ---
 
-### 👩‍🎓 Students List
+### 📚 Students List
 
 An **empty list** called `estudiantes` is used to store student information during the program execution.
 
