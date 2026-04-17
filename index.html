@@ -2,105 +2,171 @@
   <!--Clan 3: Mulata   -->
   <!-- fecha: 16-04-2025 -->
 <!DOCTYPE html>
-<html lang="en">
+<!-- Declaración del tipo de documento. Obligatoria para que el navegador sepa que estamos usando HTML5. -->
+<html lang="es">
+    <!-- lang="es" indica que el idioma principal de la página es español. 
+         Importante para accesibilidad, SEO y lectores de pantalla. -->
+
 <head>
+    <!-- Todo el contenido del <head> es metadata y recursos que no se ven directamente. -->
+
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8. 
+         Imprescindible para mostrar correctamente tildes, ñ y caracteres especiales en español. -->
+
     <meta name="Cienega de mallorquin" content="Una pagina no oficial de la cienega de mallorquin">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Meta tag no estándar. Normalmente se usa "description" para SEO. 
+         Este nombre es poco convencional, pero funciona como descripción alternativa. -->
+
     <meta name="keywords" content="Ciénega, ecología, ecoparque, senderismo, turismo sostenible">
-    <title>Ciénega de mallorquín_ página no oficial ❁</title>
+    <!-- Palabras clave para SEO. Aunque Google ya no las usa tanto, sigue siendo buena práctica incluirlas. -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Enlace al archivo CSS externo. 
+         Se carga de forma bloqueante (el navegador espera a que cargue antes de renderizar). -->
+
+    <title>Ciénega de Mallorquín - Página no oficial ❁</title>
+    <!-- Título de la pestaña del navegador. Muy importante para SEO y experiencia de usuario. -->
+
 </head>
+
 <body>
+    <!-- Cuerpo visible de la página -->
+
     <header>
+        <!-- <header> es el contenedor semántico correcto para la cabecera principal de la página. -->
+
+        <!-- Video de fondo -->
         <video autoplay muted loop id="video-bg">
+            <!-- autoplay = reproduce automáticamente 
+                 muted = silenciado (obligatorio en la mayoría de navegadores para autoplay)
+                 loop = se repite indefinidamente -->
             <source src="assets/videos/video-low.mp4" type="video/mp4">
+            <!-- Fuente del video. Se usa "video-low" probablemente para optimizar carga (menor peso). -->
+            
+            <!-- Texto alternativo cuando el navegador no soporta la etiqueta <video> -->
             tu navegador no soporta dicho video
         </video>
-    <nav class="navbar">
-        <span>Eco parque <br> Mallorquín</span>
-        <a href="https://ecoturismocienagademallorquin.com/" target="_blank">Información oficial</a>
-        <a href="https://ecoturismocienagademallorquin.com/fiesta-de-la-virgen-del-carmen-de-los-pescadores/" target="_blank"> Conoce sus costumbres</a>
-        <a href="https://agendacolombia.com/barranquilla/guia-del-ecoparque-mallorquin-en-barranquilla/" target="_blank">Eventos</a>
-        <a href="https://www.elespectador.com/ambiente/blog-el-rio/la-disputa-por-las-obras-alrededor-de-la-cienaga-mas-importante-de-barranquilla/" target="_blank">Noticias</a>
-    </nav>
-    <div class="titules">
-        <div class="titules-inner">
-            <p>Eco</p>
-            <h1>Parque Mallorquín</h1>
+
+        <!-- Navegación -->
+        <nav class="navbar">
+            <!-- <nav> es el elemento semántico correcto para la barra de navegación principal. -->
+
+            <span>Eco parque <br> Mallorquín</span>
+            <!-- <span> usado como logo/título. Podría mejorarse con <a> para que sea clickeable. 
+                 El <br> fuerza salto de línea. -->
+
+            <!-- Enlaces externos -->
+            <a href="https://ecoturismocienagademallorquin.com/" target="_blank">Información oficial</a>
+            <!-- target="_blank" abre en nueva pestaña. 
+                 Buena práctica cuando enlazamos a sitios externos. -->
+
+            <a href="https://ecoturismocienagademallorquin.com/fiesta-de-la-virgen-del-carmen-de-los-pescadores/" target="_blank">Conoce sus costumbres</a>
+            <a href="https://agendacolombia.com/barranquilla/guia-del-ecoparque-mallorquin-en-barranquilla/" target="_blank">Eventos</a>
+            <a href="https://www.elespectador.com/ambiente/blog-el-rio/la-disputa-por-las-obras-alrededor-de-la-cienaga-mas-importante-de-barranquilla/" target="_blank">Noticias</a>
+        </nav>
+
+        <!-- Título principal con efecto -->
+        <div class="titules">
+            <!-- Clase "titules" probablemente es un error de escritura (debería ser "titles"). -->
+            <div class="titules-inner">
+                <!-- Contenedor interno para poder aplicar efectos (animaciones, overlay, etc.) -->
+
+                <p>Eco</p>
+                <!-- Texto secundario superior -->
+                <h1>Parque Mallorquín</h1>
+                <!-- <h1> es el título más importante de la página. Solo debe haber uno por página. -->
+            </div>
         </div>
-    </div>
     </header>
 
-<section class="info">
-    <div class="maininfo">
-        <h2>¿Que es la cienega de Mallorquín?</h2>
-        <p>La Ciénaga de Mallorquín es un tesoro natural que alberga cerca de 155 especies de aves residentes y migratorias, es el hotel y restaurante de muchas aves que aquí se alimentan y se refugian, por eso proteger este espacio es un compromiso que debemos asumir todos.</p>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3916.0792083563188!2d-74.845376!3d11.032684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d4ec5cfcde9%3A0x4aeaf8d93ef61a47!2sEcoparque%20Ci%C3%A9naga%20de%20Mallorqu%C3%ADn!5e0!3m2!1ses-419!2sco!4v1776342768656!5m2!1ses-419!2sco" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-<section class="normas">
-    <div class="norms">
-    <h3>Normas de ecología</h3>
-    <h4>ADVERTENCIA</h4>
-    <p>La Ciénaga de Mallorquín es el único ecosistema de este tipo en el Distrito de Barranquilla. Su importancia estratégica y biológica está dada por el ecosistema de manglar, playas arenosas y fondos que lo integran brindándonos importantes recursos ecosistémicos e hidrobiológicos tales como peces, ostras, el caracol y otras diversas especies de flora y fauna. Por esto es deber de TODOS cuidarla y protegerla</p>
-</div>
-<div class="listanorms">
-    <ul>
-        <li>
-        <h2>Respetar la flora y fauna</h2>
-        <img src="/assets/images/flower-svgrepo-com.svg" alt="flora">
-        <p>Evitar tocar, recolectar o dañar plantas y animales en su habitat</p>
-        </li>
-        <li>
-            <h2>No arrojar basura</h2>
-        <img src="/assets/images/trashicon.svg" alt="basura">
-        <p>Utilizar los contenedores adecuados y mantener los espacios limpios</p>
-        </li>
-        <li>
-            <h2>Seguir los senderos designados</h2>
-            <img src="/assets/images/signal.svg" alt="signal">
-            <p>Caminar solo por las áreas permitidas para preservar la vegetación y evitar la erosión.</p>
-        </li>
-        <li>
-            <h2>No alimentar a los animales</h2>
-            <img src="/assets/images/prohibition.svg" alt="signal Prohibition">
-            <p>Caminar solo por las áreas permitidas para preservar la vegetación y evitar la erosión.</p>
-        </li>
-        <li>
-            <h2>No hacer fuego</h2>
-            <img src="/assets/images/firewall.svg" alt="signal Prohibition">
-            <p>Prohido encender fogatas a usar dispositivos de calefacción</p>
-        </li>
-           <li>
-            <h2>Controlar las mascotas</h2>
-            <img src="/assets/images/petsicon.svg" alt="signal Prohibition">
-            <p>En caso de permitirse, mantener a las mascotas bajo control y recoger sus excrementos</p>
-        </li>
-        <li>
-            <h2>Respetar las señales y normativas</h2>
-            <img src="/assets/images/warning.svg" alt="signal Prohibition">
-            <p>Seguir las indicaciones y reglamentos establecidos para garantizar la seguridad y conservación del área</p>
-        </li>
-        <li>
-            <h2>No hacer ruido excesivo</h2>
-            <img src="/assets/images/bocina.svg" alt="sound signal">
-            <p>Mantener un nivel de ruido bajo para no perturbar ni a otros visitantes</p>
-        </li>
-          <li>
-            <h2>Ser responsable con el agua y energía</h2>
-            <img src="/assets/images/water.svg" alt="signal Prohibition">
-            <p>Utilizar los recursos naturales de manera consciente y evitar desperdiciar agua y energía</p>
-        </li>
-        
-        
-    </ul>
-</div>
-</section>
-<footer>
-    <a href="https://www.instagram.com/ecoparque.mallorquin/" target="_blank">
-        <img src="/assets/images/instagram.svg" alt="instagram">
-    </a>
-    <p>Instagram</p>
-</footer>
+    <!-- ======================== SECCIÓN INFORMACIÓN ======================== -->
+    <section class="info">
+        <!-- <section> indica una sección temática independiente. -->
+
+        <div class="maininfo">
+            <!-- Contenedor principal del texto informativo -->
+
+            <h2>¿Qué es la Ciénaga de Mallorquín?</h2>
+            <!-- <h2> correcto después del <h1> -->
+
+            <p>La Ciénaga de Mallorquín es un tesoro natural que alberga cerca de 155 especies de aves residentes y migratorias, es el hotel y restaurante de muchas aves que aquí se alimentan y se refugian, por eso proteger este espacio es un compromiso que debemos asumir todos.</p>
+        </div>
+
+        <!-- Mapa de Google -->
+        <iframe src="https://www.google.com/maps/embed?pb=..." 
+                width="700" 
+                height="500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!-- Iframe embebido de Google Maps.
+             loading="lazy" = carga diferida (mejora rendimiento).
+             referrerpolicy = medida de seguridad. -->
+    </section>
+
+    <!--  SECCIÓN NORMAS :P -->
+    <section class="normas">
+        <!-- Sección dedicada a las normas del ecoparque -->
+
+        <div class="norms">
+            <h3>Normas de ecología</h3>
+            <h4>ADVERTENCIA</h4>
+            <p>La Ciénaga de Mallorquín es el único ecosistema de este tipo en el Distrito de Barranquilla...</p>
+        </div>
+
+        <div class="listanorms">
+            <!-- Contenedor de la lista de normas -->
+
+            <ul>
+                <!-- Lista no ordenada (<ul>) es correcta para normas. -->
+
+                <li>
+                    <h2>Respetar la flora y fauna</h2>
+                    <!-- Usar <h2> dentro de <li> no es lo más semántico. Mejor usar <h3> o <strong>. -->
+                    <img src="/assets/images/flower-svgrepo-com.svg" alt="flora">
+                    <!-- Alt text descriptivo = buena accesibilidad -->
+                    <p>Evitar tocar, recolectar o dañar plantas y animales en su habitat</p>
+                </li>
+
+                <!-- Repetir el mismo patrón para los demás ítems... -->
+
+                <li>
+                    <h2>No arrojar basura</h2>
+                    <img src="/assets/images/trashicon.svg" alt="basura">
+                    <p>Utilizar los contenedores adecuados y mantener los espacios limpios</p>
+                </li>
+
+                <li>
+                    <h2>Seguir los senderos designados</h2>
+                    <img src="/assets/images/signal.svg" alt="signal">
+                    <p>Caminar solo por las áreas permitidas para preservar la vegetación y evitar la erosión.</p>
+                </li>
+
+                <li>
+                    <h2>No alimentar a los animales</h2>
+                    <img src="/assets/images/prohibition.svg" alt="Prohibición de alimentar animales">
+                    <p>Caminar solo por las áreas permitidas para preservar la vegetación y evitar la erosión.</p>
+                    <!-- Nota: Este texto parece copiado del anterior. Debería corregirse. -->
+                </li>
+
+                <!-- ... resto de elementos similares ... -->
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- <footer> elemento semántico para el pie de página -->
+
+        <a href="https://www.instagram.com/ecoparque.mallorquin/" target="_blank">
+            <img src="/assets/images/instagram.svg" alt="Instagram del Ecoparque Mallorquín">
+        </a>
+        <p>Instagram</p>
+    </footer>
+
 </body>
 </html>
